@@ -30,49 +30,6 @@ Claro, vou explicar cada termo e sua utilização no código da API.
 
 - **routes.get()**, **routes.post()**, **routes.delete()**: São métodos para definir diferentes tipos de rotas no roteador (`routes`). Cada um deles especifica uma rota, o tipo de requisição que ela espera e a função a ser executada quando essa rota é acessada.
 
-########################################################################################################
-A API estará acessível em `http://localhost:21262`.
-
-## Rotas
-
-### Listar todos os registros
-
-- **URL:** `/`
-- **Método:** `GET`
-- **Descrição:** Retorna todos os registros do "banco de dados" simulado.
-
-### Adicionar um novo registro
-
-- **URL:** `/add`
-- **Método:** `POST`
-- **Descrição:** Adiciona um novo registro ao "banco de dados".
-- **Corpo da Requisição:** Deve conter dados no formato JSON representando o novo registro a ser adicionado.
-
-### Remover um registro
-
-- **URL:** `/:id`
-- **Método:** `DELETE`
-- **Descrição:** Remove um registro do "banco de dados" com base no ID fornecido na URL.
-
-## Exemplos de Uso
-
-### Listar todos os registros
-
-```bash
-curl http://localhost:21262/
-```
-
-### Adicionar um novo registro
-
-```bash
-curl -X POST -H "Content-Type: application/json" -d '{"Nome":"NovoNome", "Idade":"25"}' http://localhost:21262/add
-```
-
-### Remover um registro
-
-```bash
-curl -X DELETE http://localhost:21262/1
-```
 
 ## Contribuição
 
