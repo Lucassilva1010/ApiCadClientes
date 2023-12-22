@@ -1,4 +1,4 @@
-# API de Exemplo
+# API
 
 Esta é uma API simples construída com Node.js e Express para demonstrar operações básicas de CRUD (Create, Read, Update, Delete) em um "banco de dados" simulado.
 
